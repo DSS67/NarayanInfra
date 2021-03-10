@@ -1,0 +1,395 @@
+/*********************** main_grid Css starts here ***********************/
+
+.page_heading{
+  width: 100%;
+  height: 3.5rem;
+  padding: 1rem;
+  background: #d3e0ea;
+}
+
+.page_heading h3{
+	text-align: left !important;
+	padding-left: 45px;
+	font-family: var(--title);
+	font-size: 1.5rem !important;
+	color: #606060;
+}
+
+.main_content{
+	width: 100%;
+	height: auto;
+	text-align: justify;
+	padding: 5rem 3rem;
+}
+
+.contact_sec{
+	height: auto;
+	/*background-image: linear-gradient(to bottom, #0099ff, #3faaff, #62baff, #83caff, #a2d9ff);*/
+	background: #0099FF;
+}
+
+.contact_form{
+	width: 100%;
+	height: auto;
+	text-align: justify;
+	padding: 5rem 2rem;
+	color: #fff;
+}
+
+.contact_form h3{
+	font-size: 2.5rem;
+}
+
+.contact_form p{
+	font-size: 0.8rem;
+	font-family: var(--font_pars);
+	font-weight: 400 !important;
+}
+
+.contact_form .form_name{
+	padding-top: 2rem;
+	font-size: 1.5rem;
+}
+
+.contactForm textarea, input::placeholder{
+	/*font-family: var(--title);*/
+}
+
+/*********************** main_grid Css Ends here ***********************/
+
+
+/*********************** our team Css Starts here ***********************/
+
+.main_content .total_emp{
+	font-family: var(--title);
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: #515452;
+}
+
+.main_content .team_sub_heading{
+	font-family: var(--title);
+	font-size: 1rem;
+	font-weight: 500;
+	color: #515452;
+}
+
+.main_content .team_list li{
+	font-family: var(--para_font) !important;
+	font-size: 0.8rem !important;
+	font-weight: 300 !important;
+	color: #606060 !important;
+}
+
+/*********************** our team Css Ends here ***********************/
+
+
+/*********************** our values Css starts here ***********************/
+
+.main_content .values_heading{
+	font-family: var(--title);
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #515452;
+}
+
+.main_content .values_sub_heading{
+	color: #606060 !important;
+}
+
+/*********************** our values Css Ends here ***********************/
+
+
+/*********************** our vision Css starts here ***********************/
+
+.main_content .vision_content h3{
+	font-family: var(--title);
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #565957;
+
+}
+
+/*********************** our vision Css Ends here ***********************/
+
+
+/*********************** our strength Css starts here ***********************/
+
+.stranght_content ul li{
+	font-family: var(--font_pars);
+	font-size: var(--para_font);
+	color: #606060;
+}
+
+/*********************** our strength Css Ends here ***********************/
+
+
+/*********************** products & services Css starts here ***********************/
+
+.products_content{
+	width: 100%
+	height: auto;
+	margin: 5rem 3rem;
+}
+
+.products_content .products_sub_heading{
+	font-family: var(--font_pars);
+	font-size: 1rem;
+	color: #606060;
+	padding-right: 5rem;
+	text-align: justify;
+}
+
+.products_listing{
+	margin-left: 1.8rem;
+	margin-top: 2rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/*********************** products & services Css Ends here ***********************/
+
+
+/*********************** project portfolio Css starts here ***********************/
+
+.portfolio_img img{
+	transition: 0.4 ease all;
+}
+
+.portfolio_img img:hover{
+	transform: translateY(-6px);
+	transform: scale(1.09);
+
+	-webkit-transition: transform 1.09 ease-in-out;
+    -moz-transition:transform 1.09 ease-in-out;
+    -ms-transition:transform 1.09 ease-in-out;
+}
+
+/*********************** project portfolio Css Ends here ***********************/
+
+
+/*********************** contact us Css starts here ***********************/
+
+.contact_header{
+	margin: 0;
+	height: calc(100vh - 50vh);
+	font-family: 'Montserrat';
+	border-bottom: 7px solid #c6f0f3;
+}
+
+.contact_header section{
+	display: grid;
+	grid-template-columns: repeat(10, auto);
+}
+
+.contact_header section .anime_item{
+	background-color: #fff;
+	height: calc(100vh - 50vh);
+	transition: background-color 1s;
+}
+
+.contact_header h1{
+	font-size: 5em;
+	color: #606060;
+	position: absolute;
+	top: 40%;
+	left: 12%;
+	opacity: 0;
+	z-index: 2;
+}
+
+.contact_header p{
+	font-size: 1em;
+	color: #606060;
+	position: absolute;
+	top: 50%;
+	left: 12%;
+	opacity: 0;
+	z-index: 3;
+}
+
+.contact_section{
+	margin: 5rem 3rem;
+}
+
+.contact_us_title h3{
+	font-family: var(--title);
+	font-weight: 500;
+	color: #505050;
+}
+
+.contact_us_title p{
+	font-size: 0.8rem;
+	font-weight: 500 !important;
+	color: #606060;
+}
+
+.contact_us_title p span{
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.address{
+	margin-top: 3rem;
+}
+
+.address p{
+	font-size: 0.9rem;
+	font-weight: 400;
+	color: #606060 !important;
+}
+
+.address p span{
+	font-size: 0.7rem;
+    font-weight: 500;
+    color: #606060 !important;
+}
+
+.gst_details{
+	margin-top: 3rem;
+	color: #606060;
+}
+
+.gst_details p, .gst_details strong{
+	font-size: 0.8rem;
+	margin: 0;
+	padding: 0;
+}
+
+.email_id{
+	font-size: 0.8rem;
+	margin-top: 3rem;
+	color: #606060;
+}
+
+.phone_no{
+	font-size: 0.8rem;
+	margin-top: 3rem;
+	color: #606060;
+}
+
+.form_name{
+	font-family: var(--title);
+    font-weight: 500;
+    color: #505050;
+}
+
+::placeholder{
+	font-size: 0.8rem !important;
+}
+
+input::focus {
+  outline-color: blue !important;
+}
+
+.form{
+	margin: 5rem 0;
+
+}
+
+.icon{
+	margin-left: 4.6rem !important;
+}
+
+.text h2{
+    font-size: 1.5rem;
+    margin-left: -49px;
+	margin-bottom: 0 !important;
+	color: #606060;
+}
+
+.text p{
+    padding: 0 48px;
+    font-size: 0.9rem;
+	color: #606060;
+}
+.text p span{
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+.text p a{
+	text-decoration: none;
+	color: #606060;
+}
+
+.EnqBox .EnqBoxTop {
+    border-bottom: 5px solid #0d70a6 !important;
+    background: #128dd0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px 10px 0px 0px !important;
+    text-align: left !important;
+}
+
+.EnqBoxTop h2{
+	font-family: var(--title);
+	font-size: 1.5rem;
+}
+
+.EnqBoxTop p{
+	font-family: var(--font_pars);
+	font-size: 0.9rem;
+	padding-top: 1rem !important;
+}
+
+.EnqBoxTop h2, .EnqBoxTop p{
+	margin-bottom: 0 !important;
+	padding: 0 !important;
+	color: #fff !important;
+	text-align: left !important;
+}
+
+.submitbtn{
+	width: 202px;
+    margin-top: 12px; 
+}
+
+.submitbtn button{
+	font-size: 0.8rem !important;
+}
+
+.contact-img img{
+	margin-left: 50px;
+    width: 97%;
+}
+
+/*********************** contact us Css Ends here ***********************/
